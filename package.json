@@ -13,7 +13,10 @@
   },
   "scripts": {
     "build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --outfile=./public/index.js",
-    "dev": "node ./dev.js"
+    "dev": "node ./dev.js",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint ./src/**/*.ts --fix",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "esbuild": "^0.19.11",
