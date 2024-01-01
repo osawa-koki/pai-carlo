@@ -6,5 +6,8 @@
   "repository": "https://github.com/osawa-koki/pai-carlo.git",
   "author": "osawa-koki <koki@osawa.dev>",
   "license": "Apache-2.0",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
 }
