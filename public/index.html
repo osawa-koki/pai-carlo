@@ -10,15 +10,15 @@
 <body>
   <h1 class="mt-3 text-center">🧮 Pai carlo 🧮</h1>
   <canvas width="100" height="100" class="mt-3 mx-auto border d-block" style="width: 300px; aspect-ratio: 1/1;"></canvas>
-  <button class="btn btn-primary mt-3 d-block mx-auto">開始</button>
+  <button id="button" class="btn btn-primary mt-3 d-block mx-auto">開始</button>
   <table class="table mt-3 mx-auto" style="max-width: 300px;">
     <tbody>
       <tr>
         <td class="text-center ">実行回数</td>
         <td class="text-center">
-          <input type="range" min="10000" max="100000" step="10000" />
+          <input id="execute-count-input" type="range" min="10000" max="100000" step="10000" />
         </td>
-        <td class="text-center"></td>
+        <td id="execute-count-show" class="text-center"></td>
       </tr>
       <tr class="table-light">
         <td class="text-end">円の外</td>
@@ -26,14 +26,14 @@
         <td class="text-start">円の中</td>
       </tr>
       <tr>
-        <td class="text-end"></td>
+        <td id="points-in" class="text-end"></td>
         <td class="text-center bg-light">点の数</td>
-        <td class="text-start"></td>
+        <td id="points-out" class="text-start"></td>
       </tr>
       <tr>
-        <td class="text-end"></td>
+        <td id="ratio-in" class="text-end"></td>
         <td class="text-center bg-light">点の割合</td>
-        <td class="text-start"></td>
+        <td id="ratio-out" class="text-start"></td>
       </tr>
       <tr>
         <td>π = </td>
