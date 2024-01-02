@@ -3,7 +3,9 @@
 export const canvasElement = document.getElementById('canvas') as HTMLCanvasElement
 export const ctx = canvasElement.getContext('2d')!
 export const canvasSize = (canvasElement.width = canvasElement.height = 100)
-export const buttonElement = document.getElementById('button') as HTMLButtonElement
+
+export const startButtonElement = document.getElementById('start-button') as HTMLButtonElement
+export const stopButtonElement = document.getElementById('stop-button') as HTMLButtonElement
 
 export const pointsInElement = document.getElementById('points-in') as HTMLSpanElement
 export const pointsOutElement = document.getElementById('points-out') as HTMLSpanElement
