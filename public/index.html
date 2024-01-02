@@ -8,7 +8,35 @@
   <title>🧮 Pai carlo 🧮</title>
 </head>
 <body>
-  <h1>🧮 Pai carlo 🧮</h1>
+  <h1 class="mt-3 text-center">🧮 Pai carlo 🧮</h1>
+  <canvas id="canvas" class="mt-3 mx-auto border d-block" style="width: 300px; aspect-ratio: 1/1;"></canvas>
+  <div class="mt-3 d-flex">
+    <button id="start-button" class="btn btn-primary mt-3 d-block mx-auto">Start</button>
+    <button id="stop-button" class="btn btn-danger mt-3 d-block mx-auto" disabled>Stop</button>
+  </div>
+  <table class="table mt-3 mx-auto" style="max-width: 300px;">
+    <tbody>
+      <tr class="table-light">
+        <td class="text-end">円の外</td>
+        <td class="text-center"></td>
+        <td class="text-start">円の中</td>
+      </tr>
+      <tr>
+        <td id="points-in" class="text-end"></td>
+        <td class="text-center bg-light">点の数</td>
+        <td id="points-out" class="text-start"></td>
+      </tr>
+      <tr>
+        <td id="ratio-in" class="text-end"></td>
+        <td class="text-center bg-light">点の割合</td>
+        <td id="ratio-out" class="text-start"></td>
+      </tr>
+      <tr>
+        <td>π = </td>
+        <td id="pai" colspan="2"></td>
+      </tr>
+    </tbody>
+  </table>
   <script src="./index.js"></script>
 </body>
 </html>
